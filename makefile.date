@@ -3,9 +3,9 @@
 CXX        = clang++
 CXXFLAGS   = -Wall -Wextra -std=c++0x
 LDFLAGS    = -lm
-SRCS       = Client.cpp MainTestClient.cpp
+SRCS       = testeurDeDate.cpp date.cpp
 OBJS       = $(SRCS:.cpp=.o)
-TARGET     = MainTestClient
+TARGET     = testeurDeDate
 DEPFLAGS   = -MMD -MP
 DEPS	   = $(OBJS:.o=.d)
 
