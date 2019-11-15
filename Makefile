@@ -1,11 +1,11 @@
 # Makefile 
 
-CXX        = clang++
+CXX        = g++
 CXXFLAGS   = -Wall -Wextra -std=c++0x
 LDFLAGS    = -lm
-SRCS       = Client.cpp MainTestClient.cpp
+SRCS       = Hotel.cpp MainTestHotel.cpp
 OBJS       = $(SRCS:.cpp=.o)
-TARGET     = MainTestClient
+TARGET     = MainTestHotel
 DEPFLAGS   = -MMD -MP
 DEPS	   = $(OBJS:.o=.d)
 

@@ -6,28 +6,32 @@
 	****/
 
 
-#ifndef Hotel_H
-#define Hotel_H
 #include <string>
 #include <iostream>
+#include <vector> 
+using namespace std;
+
+#ifndef Hotel_H
+#define Hotel_H
 
 class Hotel{
 	private :
 		int id;
 		string nom;
 		string ville;
-		int listChambre;
+		vector<int> listChambre;
 
 	public :
-		Hotel(int id,int nom,int ville,int nbchambre);
+		Hotel(int id,string nom,string ville,vector<int> chambres);
 		int getId() const;
 		void setId(int id);
 		string getNom() const;
 		void setNom(string Nom);
 		string getVille() const;
 		void setVille(string ville);
-		int getChambre() const;
-		void set chambre(int nbchambre);
+		int getChambre(int x) const;
+		void setchambre();
+		void ChangeHotel(int id,string nom,string ville);
 };
 
 #endif
