@@ -11,6 +11,8 @@ int main()
 	std::cout << "mois :";
 	std::cin >> mois;
 
+
+	//on verifie si le numéro du mois est conforme
 	while (mois > 12){
 		std::cout << "entrer le bon mois :";
 		std::cin >> mois;
@@ -21,6 +23,7 @@ int main()
 	std::cout << "jour :";
 	std::cin >> jour;
 
+	//on définit le nombre de jour en fonction du mois
 	if (mois == 1 || mois == 3 || mois == 5 || mois == 7 || mois == 8 || mois == 10 || mois == 12){
 		while (jour > 31){
 			std::cout << "entrer le bon jour :";
