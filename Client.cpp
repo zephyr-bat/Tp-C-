@@ -9,7 +9,7 @@
 #include "Client.h"
 using namespace std;
 
-//constructeur 
+//constructeur du client 
 Client::Client(int id, string nom, string prenom)
 {
     this->id = id;
@@ -47,7 +47,7 @@ void Client::setPrenom(string prenom)
     this->Prenom = prenom;
 }
 
-// fonction de modification du client
+// fonction de modification du client 
 void Client::ChangeClient(string nom, string prenom)
 {
     setNom(nom);
