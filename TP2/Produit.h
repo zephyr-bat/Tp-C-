@@ -36,6 +36,9 @@ public:
 	int getId();
 	void setId(int id);
 
+	void modifierQte(int qte);
+
+
 };
 
 #endif 

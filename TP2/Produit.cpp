@@ -7,6 +7,7 @@
 
 
 #include <string>
+#include <iostream>
 
 #include "Produit.h"
 
@@ -62,4 +63,13 @@ int Produit::getId(){
 
 void Produit::setId(int id){
 	this -> m_id = id;
+}
+
+
+void Produit::modifierQte(int qte){
+	std::cout << "entrer la nouvelle quantité : ";
+	std::cin >> qte;
+
+	Produit::setQte(qte);
+
 }

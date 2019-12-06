@@ -18,6 +18,14 @@ int main()
 	std::cout << "Produit : " << monProduit.getTitre() << " Prix : " << monProduit.getPrix()<< " Quantité disponible : " << monProduit.getQte() << std::endl;
 	std::cout << "Description : " << monProduit.getDescr() << " Id" << monProduit.getId() << std::endl;
 
+	int qte = 5;
+
+
+	monProduit.modifierQte(qte);
+
+	std::cout << "Produit : " << monProduit.getTitre() << " Prix : " << monProduit.getPrix()<< " Quantité disponible : " << monProduit.getQte() << std::endl;
+	std::cout << "Description : " << monProduit.getDescr() << " Id" << monProduit.getId() << std::endl;
+
 	std::cout << "Produit : " << monProduit2.getTitre() << " Prix : " << monProduit2.getPrix()<< " Quantité disponible : " << monProduit2.getQte() << std::endl;
 	std::cout << "Description : " << monProduit2.getDescr() << " Id" << monProduit2.getId() << std::endl;
 	return 0;
