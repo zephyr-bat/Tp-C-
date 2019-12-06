@@ -71,9 +71,8 @@ void Produit::modifierQte(int qte){
 
 	Produit::setQte(qte);
 }
-
-string ToString(){
+string Produit::ToString(){
 	string info = "";
-	info = getTitre() + "|" +getDescr() + "|" + string.valueof(getQte()) + "|" + string.valueof(getPrix()) ;
+	info = getTitre() + "|" +getDescr() + "|" +to_string(getQte()) + "|" + to_string(getPrix()) ;
 	return info;
 }
