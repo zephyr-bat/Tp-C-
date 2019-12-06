@@ -5,13 +5,13 @@
 	* Objectif : définir la classe Produit
 	****/
 
-
-#include <string>
 #include <iostream>
+#include <string>
 
 #include "Produit.h"
+using namespace std;
 
-Produit::Produit(std::string titre, float prix, int qte, std::string descr, int id){
+Produit::Produit(string titre, float prix, int qte,string descr, int id){
 	m_titre = titre;
 	m_prix = prix;
 	m_qte = qte;
@@ -20,12 +20,12 @@ Produit::Produit(std::string titre, float prix, int qte, std::string descr, int 
 }
 
 
-std::string Produit::getTitre(){
+string Produit::getTitre(){
 	return m_titre;
 }
 
 
-void Produit::setTitre(std::string titre){
+void Produit::setTitre(string titre){
 	this -> m_titre = titre;
 }
 
@@ -48,11 +48,11 @@ void Produit::setQte(int qte){
 }
 
 
-std::string Produit::getDescr(){
+string Produit::getDescr(){
 	return m_descr;
 }
 
-void Produit::setDescr(std::string descr){
+void Produit::setDescr(string descr){
 	this ->  m_descr = descr;
 }
 
@@ -65,11 +65,15 @@ void Produit::setId(int id){
 	this -> m_id = id;
 }
 
-
 void Produit::modifierQte(int qte){
-	std::cout << "entrer la nouvelle quantité : ";
-	std::cin >> qte;
+	cout << "entrer la nouvelle quantité : ";
+	cin >> qte;
 
 	Produit::setQte(qte);
+}
 
+string ToString(){
+	string info = "";
+	info = getTitre() + "|" +getDescr() + "|" + string.valueof(getQte()) + "|" + string.valueof(getPrix()) ;
+	return info;
 }

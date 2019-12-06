@@ -15,7 +15,6 @@ ClientTp2::ClientTp2(int id, string nom, string prenom)
     this->id = id;
     this->Nom = nom;
     this->Prenom = prenom;
-    this->Panier= nullptr;
 }
 
 //geteur id du client
@@ -55,14 +54,17 @@ void ClientTp2::ChangeClient(string nom, string prenom)
     setPrenom(prenom);
 }
 
-void ClientTp2::AjoutProduit(Produit *produit)
+void ClientTp2::AjoutProduit(Produit produit)
 {
     Panier.push_back(produit);
 }
 
+
+
 void ClientTp2::AffichePanier()
 {
-    for (const Produit* produit: Panier) {
-    std::cout << produit->get_id() << " ";
-}
+    for (Produit p: Panier) 
+    {
+        std::cout << p.ToString() << endl;
+    }
 }

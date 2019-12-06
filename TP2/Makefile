@@ -3,9 +3,9 @@
 CXX        = g++
 CXXFLAGS   = -Wall -Wextra -std=c++0x
 LDFLAGS    = -lm
-SRCS       =  
+SRCS       = Magasin.cpp ClientTp2.cpp Produit.cpp
 OBJS       = $(SRCS:.cpp=.o)
-TARGET     = 
+TARGET     = MainTestMagasin
 DEPFLAGS   = -MMD -MP
 DEPS	   = $(OBJS:.o=.d)
 

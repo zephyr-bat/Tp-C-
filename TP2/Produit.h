@@ -7,22 +7,22 @@
 
 #ifndef PRODUIT_H
 #define PRODUIT_H
-
+#include <iostream>
 #include <string>
-
+using namespace std;
 class Produit{
 private:
-	std::string m_titre;
+	string m_titre;
 	float m_prix;
 	int m_qte; //quantité
-	std::string m_descr; //description
+	string m_descr; //description
 	int m_id; //identifiant
 
 public:
-	Produit(std::string titre, float prix, int qte, std::string descr, int id);
+	Produit(string titre, float prix, int qte,string descr, int id);
 
-	std::string getTitre();
-	void setTitre(std::string titre);
+	string getTitre();
+	void setTitre(string titre);
 
 	float getPrix();
 	void setPrix(float prix);
@@ -30,14 +30,14 @@ public:
 	int getQte();
 	void setQte(int qte);
 
-	std::string getDescr();
-	void setDescr(std::string descr);
+	string getDescr();
+	void setDescr(string descr);
 
 	int getId();
 	void setId(int id);
 
 	void modifierQte(int qte);
-
+	string ToString();
 
 };
 

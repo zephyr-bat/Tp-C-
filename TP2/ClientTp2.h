@@ -22,8 +22,9 @@ public:
         void setNom(string nom);
         void setPrenom(string prenom);
         void ChangeClient(string nom,string prenom);
-        void AjoutProduit(Produit *produit);
+        void AjoutProduit(Produit produit);
         void AffichePanier();
+
 		
 private:
         int id;

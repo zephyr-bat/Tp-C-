@@ -10,12 +10,21 @@
 using namespace std;
 
 
-Magasin::Magasin()
+Magasin::Magasin(string nom)
 {
-  nom = "";
-  m_produits = nullptr;
-  m_clients = nullptr;
-  m_Commandes = nullptr;
+  Nom = nom;
+}
+
+
+void Magasin::ToStringProduit()
+{
+	
+	for (Produit* p: m_produits)
+	{
+		
+		string info= p->ToString();
+
+	} 
 }
 
 
