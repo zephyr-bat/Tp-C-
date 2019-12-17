@@ -34,7 +34,11 @@ string ClientTp2::getPrenom() const
 {
     return Prenom;
 }
-
+string ClientTp2::toString()
+{
+  string info = getNom() +"|"+ getPrenom();
+  return info;
+}
 //seteur du nom client
 void ClientTp2::setNom(string nom)
 {

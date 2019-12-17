@@ -19,6 +19,7 @@ public:
         int getid() const;
         string getNom() const;
         string getPrenom() const;
+        string toString();
         void setNom(string nom);
         void setPrenom(string prenom);
         void ChangeClient(string nom,string prenom);

@@ -11,5 +11,8 @@
 
 int main()
 {
-    Magasin Mag1();
+    Magasin Mag1("Cheztoby");
+    Produit Test("test",32,3,"Produit test",1);
+    Mag1.AjoutProduit(Test);
+    cout << Mag1.ToStringProduit() << endl;
 }

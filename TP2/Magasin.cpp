@@ -15,16 +15,20 @@ Magasin::Magasin(string nom)
   Nom = nom;
 }
 
-
-void Magasin::ToStringProduit()
+void Magasin::AjoutProduit(Produit produit)
 {
-	
-	for (Produit* p: m_produits)
+	m_produits.push_back(produit);
+}
+string Magasin::ToStringProduit()
+{
+	string info ="";
+	for (Produit p: m_produits)
 	{
 		
-		string info= p->ToString();
+		info= p.ToString();
 
 	} 
+	return info;
 }
 
 
