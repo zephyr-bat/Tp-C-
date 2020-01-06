@@ -22,7 +22,7 @@ string Encrypt::get\_cipher() const{
 
 
 bool Encrypt::read(bool isPlain, string filename){
-
+	bool result = true;
 		ifstream monFichier(filename.c_str());
 		if(monFichier){
 			cout << "Bonjour, je suis une phrase écrite dans un fichier" << endl;
@@ -40,12 +40,14 @@ bool Encrypt::read(bool isPlain, string filename){
 		}
 		else{
 			cout << "erreur" << endl;
+			result = false;
 		}
+	return result;	
 }
 
 
 bool Encrypt::write(bool isPlain, string filename){
-
+	bool result = true;
 		ofstream monFichier(filename.c_str());
 		if(monFichier){
 
@@ -58,5 +60,7 @@ bool Encrypt::write(bool isPlain, string filename){
 		}
 		else{
 			cout << "erreur" << endl;
+			result = false;
 		}
+	return result	
 }
