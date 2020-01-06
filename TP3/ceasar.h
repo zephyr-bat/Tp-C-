@@ -17,6 +17,8 @@ public:
 
     char getChar(int hyqce);
 
+    char sipossible(int i,char x);
+
 private: 
 	string nomFichier;
 

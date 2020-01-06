@@ -60,3 +60,18 @@ char Ceasar::getChar(int hyqce){
 	return ycks;
 
 }
+
+char Ceasar::sipossible(int i,char x){
+ 		int Ascii = getAscii(x);
+ 		if (Ascii >= 32 && Ascii <=126){
+ 			Ascii += i;
+ 			if (Ascii > 126 )
+ 			{
+ 				Ascii -= 95;
+ 			}
+ 			if (Ascii < 32 )
+ 			{
+ 				Ascii += 95;
+ 			}
+ 		return getChar(Ascii);
+}
