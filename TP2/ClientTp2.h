@@ -15,22 +15,26 @@ using namespace std;
 
 class ClientTp2 {
 public:
-        ClientTp2(int id,string nom,string prenom);
-        int getid() const;
-        string getNom() const;
-        string getPrenom() const;
-        string toString();
-        void setNom(string nom);
-        void setPrenom(string prenom);
-        void ChangeClient(string nom,string prenom);
-        void AjoutProduit(Produit produit);
-        void AffichePanier();
+	ClientTp2();
+	ClientTp2(int id, string nom, string prenom);
+	int getid() const;
+	string getNom() const;
+	string getPrenom() const;
+	vector<Produit*> getListeProduits() const;
+	string ToString();
+	void setNom(string nom);
+	void setPrenom(string prenom);
+	void ChangeClient(string nom, string prenom);
+	void AjoutProduit(Produit *produit);
+	void AffichePanier();
+	void modifproduitQuantite(string nom, int qte);
+	void SupprimerProduit(string nom);
+	void ViderPanier();
 
-		
 private:
-        int id;
-        string Nom;
-        string Prenom;
-        vector<Produit> Panier;
+	int id;
+	string Nom;
+	string Prenom;
+	vector<Produit*> Panier;
 };
 #endif

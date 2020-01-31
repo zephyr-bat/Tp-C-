@@ -5,26 +5,27 @@
 	* Objectif : déclarer la classe Produit
 	****/
 
-#ifndef PRODUIT_H
+ifndef PRODUIT_H
 #define PRODUIT_H
 #include <iostream>
 #include <string>
 using namespace std;
-class Produit{
+class Produit {
 private:
 	string m_titre;
-	float m_prix;
+	double m_prix;
 	int m_qte; //quantité
 	string m_descr; //description
 	int m_id; //identifiant
 
 public:
-	Produit(string titre, float prix, int qte,string descr, int id);
+	Produit();
+	Produit(string titre, double prix, int qte, string descr, int id);
 
 	string getTitre();
 	void setTitre(string titre);
 
-	float getPrix();
+	double getPrix();
 	void setPrix(float prix);
 
 	int getQte();
@@ -40,5 +41,8 @@ public:
 	string ToString();
 
 };
+
+#endif 
+
 
 #endif 
