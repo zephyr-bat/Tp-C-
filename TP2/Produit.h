@@ -5,7 +5,7 @@
 	* Objectif : déclarer la classe Produit
 	****/
 
-ifndef PRODUIT_H
+#ifndef PRODUIT_H
 #define PRODUIT_H
 #include <iostream>
 #include <string>
@@ -45,4 +45,3 @@ public:
 #endif 
 
 
-#endif 

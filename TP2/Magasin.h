@@ -9,7 +9,7 @@
 #include <vector>
 #include "Produit.h"
 #include "ClientTp2.h"
-#include "Commande.h"
+#include "commande.h"
 
 using namespace std;
 #ifndef _Magasin_h
